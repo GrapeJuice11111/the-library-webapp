@@ -35,3 +35,11 @@ header{
 }
 
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #082f49;
+}
+
+
