@@ -13,3 +13,20 @@ body{
     display: grid;
     grid-template-rows: minmax(50px,1fr) minmax(50px,0.5fr) minmax(500px,7fr) minmax(50px,1fr);   
 }
+
+
+body{
+    display: grid;
+    grid-template-rows: minmax(50px,1fr) minmax(50px,0.5fr) minmax(500px,7fr) minmax(50px,1fr);   
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #7e22ce;
+}
+
+
