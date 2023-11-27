@@ -41,6 +41,7 @@ closeAddBook.addEventListener("click",() =>{
 })
 
 
+
 let bookAuthorValue = ""
 let bookNameValue = ""
 let bookPagesValue = "" 
