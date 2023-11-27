@@ -103,3 +103,46 @@ label{
 .endBtn > button[type="button"]{
     background-color: #dc2626;
 }
+
+
+.content{
+    margin: 20px;
+   }
+   
+   
+.cards{
+       display: grid;  
+       border-radius: 6px;
+       padding: 30px;
+       background-color: #06b6d4;
+       width: 100%;
+       grid-template-rows: repeat(auto-fill,minmax(30px,1fr));
+       color: white;
+   }
+   
+   
+   .newBookSection{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+     
+   .newBookSection > button{
+       width: 150px;
+       height: 20px;
+       border-radius: 4px;
+       margin-top: 20px;
+   
+       
+       
+   }
+   
+   
+   .content{
+       display: grid;
+       gap: 20px;
+       grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+       grid-template-rows: repeat(auto-fit, minmax(240px,1fr));
+       overflow: auto;
+       
+   }
