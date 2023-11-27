@@ -44,3 +44,17 @@ let bookAuthorValue = ""
 let bookNameValue = ""
 let bookPagesValue = "" 
 let bookPagesStatus = ""
+
+
+
+confirmBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    bookNameValue = bookName.value;
+    bookAuthorValue = bookAuthor.value;
+    bookPagesValue = bookPages.value;
+    bookPagesStatus = "";
+    addBookToLibrary(bookNameValue,bookAuthorValue,bookPagesValue,bookPagesStatus);
+    dialog.close()
+    
+   
+    
