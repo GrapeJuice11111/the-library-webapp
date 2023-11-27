@@ -74,3 +74,32 @@ label{
 }
 
 
+::backdrop{
+    background-color: #a3a3a3;
+    opacity: 0.75;
+
+}
+
+
+
+
+.endBtn{
+    display: flex;
+    gap: 20px;
+}
+
+.endBtn > button{
+    border-radius: 3px;
+    width: 75px;
+    height: 25px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.endBtn > button[type="submit"]{
+    background-color: #65a30d;
+}
+
+.endBtn > button[type="button"]{
+    background-color: #dc2626;
+}
