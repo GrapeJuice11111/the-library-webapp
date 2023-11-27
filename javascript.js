@@ -76,7 +76,10 @@ function looping(){
         bookView.append(bookNameForDom,bookAuthorForDom,bookPagesForDom,bookStatusForDom)
         bookView.dataset.indexNumbers = n   
         article.appendChild(bookView); 
-        
+        statBtn = document.createElement("button")
+        statBtn.setAttribute("class","statistics") 
+        statBtn.textContent = " Change Status"
+        statBtn.style.cssText = "border-radius: 6px; width: 100px; height: 25px;"
         removeBtn = document.createElement("button")
         removeBtn.setAttribute("class","remove")
         removeBtn.style.cssText = "border-radius: 6px; width: 100px; height: 25px;"
@@ -89,7 +92,16 @@ function looping(){
         })
 
 
-        
+        statBtn.addEventListener("click",() => {
+            index = bookView.dataset.indexNumbers
+            myLibrary[index - 1].stat()
+            bookStatusForDom.textContent = `Status:  ${myLibrary[index-1].status}`
+            
+         })
+         bookView.append(removeBtn);
+         bookView.append(statBtn);
+         console.log(myLibrary);
+      
  }
  
  
