@@ -29,3 +29,12 @@ const bookAuthor = dialog.querySelector("#bookAuthor")
 const bookPages = dialog.querySelector("#bookPages")
 const bookStatusUser = dialog.querySelector("#bookStatus")
 const confirmBtn = document.querySelector(".confirmBtn")
+
+
+
+showAddBook.addEventListener("click", () => {
+    dialog.showModal();
+});
+closeAddBook.addEventListener("click",() =>{
+    dialog.close();
+})
