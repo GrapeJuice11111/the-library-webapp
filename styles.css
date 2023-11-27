@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-      box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,body{
@@ -12,7 +12,7 @@ width: 100%;
 
 body{
     display: grid;
-    grid-template-rows: minmax(50px,1fr) minmax(50px,0.5fr) minmax(500px,7fr) minmax(50px,1fr);   
+    grid-template-rows: minmax(50px,1fr) minmax(50px,0.5fr) minmax(50px,0.5fr) minmax(500px,7fr) minmax(50px,1fr);   
 }
 
 header{
@@ -42,6 +42,7 @@ footer{
     align-items: center;
     background-color: #082f49;
 }
+
 
 article{
     background-color: white;
@@ -106,10 +107,8 @@ label{
 
 
 .content{
-    margin: 20px;
+ margin: 20px;
 }
-   
-   
 .cards{
     display: grid;  
     border-radius: 6px;
@@ -118,27 +117,32 @@ label{
     width: 100%;
     grid-template-rows: repeat(auto-fill,minmax(30px,1fr));
     color: white;
+
 }
-   
-   
+
+
 .newBookSection{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-     
+  
 .newBookSection > button{
     width: 150px;
     height: 20px;
     border-radius: 4px;
-    margin-top: 20px;   
+    margin-top: 20px;
+
+    
+    
 }
-   
-   
+
+
 .content{
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-template-rows: repeat(auto-fit, minmax(240px,1fr));
-    overflow: auto;  
+    overflow: auto;
+    
 }
