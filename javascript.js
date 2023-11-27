@@ -38,3 +38,9 @@ showAddBook.addEventListener("click", () => {
 closeAddBook.addEventListener("click",() =>{
     dialog.close();
 })
+
+
+let bookAuthorValue = ""
+let bookNameValue = ""
+let bookPagesValue = "" 
+let bookPagesStatus = ""
