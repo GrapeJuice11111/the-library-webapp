@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+      box-sizing: border-box;
 }
 
 html,body{
@@ -40,6 +41,36 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: #082f49;
+}
+
+article{
+    background-color: white;
+}
+
+
+
+dialog{
+    padding:40px;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 250px;
+    border: white;
+    border-radius: 6px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+label{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 5px;
 }
 
 
