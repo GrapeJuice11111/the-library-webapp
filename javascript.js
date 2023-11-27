@@ -29,6 +29,7 @@ const bookAuthor = dialog.querySelector("#bookAuthor")
 const bookPages = dialog.querySelector("#bookPages")
 const bookStatusUser = dialog.querySelector("#bookStatus")
 const confirmBtn = document.querySelector(".confirmBtn")
+const content = document.querySelector("article")
 
 
 
@@ -55,6 +56,28 @@ confirmBtn.addEventListener("click", (event) => {
     bookPagesStatus = "";
     addBookToLibrary(bookNameValue,bookAuthorValue,bookPagesValue,bookPagesStatus);
     dialog.close()
-    
+    looping();
+});
+
+function looping(){
    
+    n = myLibrary.length
+    let bookView = document.createElement("div")
+    let bookNameForDom = document.createElement("div")
+    let bookAuthorForDom = document.createElement("div")
+    let bookPagesForDom = document.createElement("div")
+    let bookStatusForDom = document.createElement("div")
+    bookView.setAttribute("class","cards")
+        bookNameForDom.textContent = `Title: ${myLibrary[myLibrary.length-1].bookName}` //not reading the value
+        bookAuthorForDom.textContent = `Author:  ${myLibrary[myLibrary.length-1].bookAuthor}`
+        bookPagesForDom.textContent = `Pages: ${myLibrary[myLibrary.length-1].bookPages}`
+        bookStatusForDom.textContent = `Status:  ${myLibrary[myLibrary.length-1].status}`
+        
+        bookView.append(bookNameForDom,bookAuthorForDom,bookPagesForDom,bookStatusForDom)
+        bookView.dataset.indexNumbers = n   
+        article.appendChild(bookView); 
+        
+ }
+ 
+ 
     
