@@ -24,7 +24,36 @@
     </div>
 
     <article class="content">
+        <article class="content">
+        
 
+            <dialog id="askInfoBook">
+                <form>
+                    <label>
+                        Book Name:
+                        <input type="text" id="bookName" name="bookName" required>
+                    </label>
+    
+                    <label>
+                        Author:
+                        <input type="text" id="bookAuthor" name="bookAuthor" required>
+                    </label>
+    
+                    <label>
+                        Pages:
+                        <input type="tel" id="bookPages" name="bookPages" required>    
+                    </label>
+                 
+                 
+                    <div class="endBtn">
+                    <button type="button" class="closeAddBook" value="cancel" formmethod="dialog">Cancel</button>
+                    <button type="submit" class="confirmBtn" value="default">Confirm</button>
+                    </div>
+    
+                    <output></output>
+                </form>
+            </dialog>
+    
     </article>
     <footer>
         Yelish Giri Copyright &#169; 2023
