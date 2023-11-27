@@ -77,6 +77,19 @@ function looping(){
         bookView.dataset.indexNumbers = n   
         article.appendChild(bookView); 
         
+        removeBtn = document.createElement("button")
+        removeBtn.setAttribute("class","remove")
+        removeBtn.style.cssText = "border-radius: 6px; width: 100px; height: 25px;"
+        removeBtn.textContent = "Remove"
+        removeBtn.addEventListener("click",() => {
+            bookView.remove();
+            index = bookView.dataset.indexNumbers
+            myLibrary.splice(index - 1,1)
+            console.log(myLibrary)
+        })
+
+
+        
  }
  
  
