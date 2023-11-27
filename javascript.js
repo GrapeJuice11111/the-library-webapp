@@ -105,4 +105,13 @@ function looping(){
  }
  
  
-    
+ Book.prototype.stat = function (){
+    if(this.status === "Read" || this.status === "")
+    {
+        this.status = "Not Read"
+        
+    }
+    else if(this.status === "Not Read"){
+        this.status = "Read"
+    }
+    } 
