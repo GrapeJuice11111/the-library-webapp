@@ -88,7 +88,7 @@ function looping(){
             bookView.remove();
             index = bookView.dataset.indexNumbers
             myLibrary.splice(index - 1,1)
-            console.log(myLibrary)
+          
         })
 
 
@@ -100,7 +100,7 @@ function looping(){
          })
          bookView.append(removeBtn);
          bookView.append(statBtn);
-         console.log(myLibrary);
+        
       
  }
  
