@@ -2,13 +2,26 @@ const myLibrary = [];
 
 
 
-function Book(name,author,pages,status){
+class Book{
     //the constructor
-    this.bookName = name;
-    this.bookAuthor = author;
-    this.bookPages = pages;
-    this.status = status;
+    constructor(name,author,pages,status)
+    {
+        this.bookName = name;
+        this.bookAuthor = author;
+        this.bookPages = pages;
+        this.status = status;
+    }
 
+    stat = function (){
+        if(this.status === "Read" || this.status === "")
+        {
+            this.status = "Not Read"
+            
+        }
+        else if(this.status === "Not Read"){
+            this.status = "Read"
+        }
+        } 
 }
 
 
@@ -106,13 +119,3 @@ function looping(){
  }
  
  
- Book.prototype.stat = function (){
-    if(this.status === "Read" || this.status === "")
-    {
-        this.status = "Not Read"
-        
-    }
-    else if(this.status === "Not Read"){
-        this.status = "Read"
-    }
-    } 
